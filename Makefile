@@ -12,10 +12,10 @@ BONUS_OBJS	=	$(BONUS:.c=.o)
 
 all			:	$(NAME)
 
-$(NAME)		:	$(OBJS)
+$(NAME)		:	$(OBJS) libft.h
 			ar rcs $(NAME) ${OBJS}
 
-%.o			:	%.c	libft.h
+%.o			:	%.c
 			$(CC) $(FLAGS) -c $< -o ${<:.c=.o}
 
 clean		:
