@@ -43,7 +43,7 @@ $(OBJS): $(OBJSDIR)%.o : $(SRCSDIR)%.c
 
 clean		:
 		make clean -C libft
-		rm -rf $(BONUS) $(OBjSDIR)
+		rm -rf $(BONUS) $(OBJSDIR)
 
 fclean		:	clean
 		make fclean -C libft
